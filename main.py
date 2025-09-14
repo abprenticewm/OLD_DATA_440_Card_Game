@@ -1,5 +1,7 @@
 #METHOD 1 - SOPHIA CODE 
 
+#STILL NEED TO ADD  - run tests multiple times, in a function, make table 
+
 #200 M files of 10,000 decks each named decks_seed001 (001, 002, 003...)
 #0s and 1s stored in bits packed into bytes 
 #saved runtime and memory 
