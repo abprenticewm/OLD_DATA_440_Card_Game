@@ -10,12 +10,12 @@ import csv
 from array import array
 from pathlib import Path
 import random
-import statistics   # NEW: for mean/stddev
+import statistics
 
 from src.decks import generate_deck, decode_deck
 
 # math for chunking
-DECKS_PER_FILE = 10_000   # chunk size for text files
+DECKS_PER_FILE = 10_000
 
 # helper to convert bytes to mb
 def bytes_to_mb(b: int) -> float:
@@ -36,6 +36,7 @@ def run_once(N, outdir, quick=False):
 
     # start total timer
     time_total = time.perf_counter()
+    total_memory = sum(os.path.getsize(f) for f in Path(outdir).glob("decks_*.txt"))
     # totals across all files
     total_gen = 0.0
     total_write = 0.0
@@ -164,6 +165,11 @@ def main():
         show_stats("Write", write_times)
         show_stats("Read", read_times)
         show_stats("Total runtime", runtimes)
+
+    # total size of all deck files on disk
+    total_memory = sum(os.path.getsize(f) for f in Path(args.outdir).glob("decks_*.txt"))
+    print(f"\nTotal deck files size: {total_memory / (1024**2):.2f} MB")
+
 
 
 # run main if this file is executed
