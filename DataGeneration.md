@@ -6,3 +6,13 @@ Code for generation and storage of decks and reading the files.
 
 run_tests_method1.py: 
 Runs the card generation and read code 10 times to get metrics. 
+
+decks_chunks: 
+method 1 decks 
+
+method2.py: 
+
+
+
+deck_chunks 2:
+method 2 decks 
