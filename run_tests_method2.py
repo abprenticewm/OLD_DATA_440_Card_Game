@@ -12,7 +12,7 @@ from pathlib import Path
 import random
 import statistics
 
-from src.decks import generate_deck, decode_deck
+from method2 import generate_deck, decode_deck
 
 # math for chunking
 DECKS_PER_FILE = 10_000
