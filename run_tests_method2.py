@@ -98,7 +98,7 @@ def main():
     # allows user to change the number of decks with a default of 2 million
     parser.add_argument("--n", type=int, default=2_000_000, help="Number of decks")
     # allows user to create a folder for output files
-    parser.add_argument("--outdir", default="out", help="Output directory")
+    parser.add_argument("--outdir", default="deck_chunks_2", help="Output directory")
     # allows user the option to do a quick test with 50k decks
     parser.add_argument("--quick", action="store_true", help="Quick test (50k decks)")
     # allows user to run multiple tests for stats
