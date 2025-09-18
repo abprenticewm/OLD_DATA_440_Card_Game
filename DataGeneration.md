@@ -22,15 +22,14 @@ Method 2 decks
 
 **Metrics**
 
-| Metric               | Method 1: bits -> bytes -> .bin files | Method 2: String -> .txt files |
-|-----------------------|--------------------------------------|--------------------------------|
-| Gen time mean (10 runs) |                                      | 141.082s                       |
-| Gen time std (10 runs)  |                                      | 4.515s                         |
-| Read time mean (10 runs)|                                      | 10.074s                        |
-| Read time std (10 runs) |                                      | 0.193s                         |
-| Write time mean (10 runs)|                                     | 2.580s                         |
-| Write time std (10 runs) |                                     | 0.080s                         |
-| Memory use (for 2 M decks)       |                                      | 103.00MB       
-
+| Metric                 | Method 1: bits -> bytes -> bin files | Method 2: String -> .txt files |
+|-------------------------|--------------------------------------|--------------------------------|
+| Gen time mean (10 runs) | 95.91s                               | 141.082s                       |
+| Gen time std (10 runs)  | 1.81s                                | 4.515s                         |
+| Read time mean (10 runs)| 3.79s                                | 10.074s                        |
+| Read time std (10 runs) | 0.08s                                | 0.193s                         |
+| Write time mean (10 runs)| 1.37s                               | 2.580s                         |
+| Write time std (10 runs) | 0.03s                               | 0.080s                         |
+| Total memory use        | 13.35MB                              | 103.00MB   
 
 **Write-Up**
