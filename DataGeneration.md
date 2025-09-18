@@ -23,15 +23,16 @@ Method 2 decks
 
 **Metrics**
 
-| Metric                 | Method 1: bits -> bytes -> bin files | Method 2: String -> .txt files |
-|-------------------------|--------------------------------------|--------------------------------|
-| Gen time mean (10 runs) | 95.91s                               | 141.082s                       |
-| Gen time std (10 runs)  | 1.81s                                | 4.515s                         |
-| Read time mean (10 runs)| 3.79s                                | 10.074s                        |
-| Read time std (10 runs) | 0.08s                                | 0.193s                         |
-| Write time mean (10 runs)| 1.37s                               | 2.580s                         |
-| Write time std (10 runs) | 0.03s                               | 0.080s                         |
-| Total memory use        | 13.35MB                              | 103.00MB   
+| Metric                   | Method 1: bits -> bytes -> bin files | Method 2: String -> .txt files |
+|---------------------------|--------------------------------------|--------------------------------|
+| Gen time mean (10 runs)   | 95.91 s                              | 94.780 s                        |
+| Gen time std (10 runs)    | 1.81 s                               | 1.11 s                          |
+| Read time mean (10 runs)  | 3.79 s                               | 1.658 s                         |
+| Read time std (10 runs)   | 0.08 s                               | 0.037 s                         |
+| Write time mean (10 runs) | 1.37 s                               | 3.324 s                         |
+| Write time std (10 runs)  | 0.03 s                               | 0.027 s                         |
+| Total memory use          | 13.35 MB                             | 103.00 MB  
 
 **Write-Up**
+
 We are choosing to use Method 1. The pros for method 1 include a shorter write and read time and less memory used for deck storage. The major con is that the data is stored in a less intuitive format. When you open the .bin files they appear to be a sprawl of random characters as the decks are stored in binary. Additionally, in order to search the decks they need to be converted (which is done in the read test). This may lead to some complications down the line in searching for sequences - however we believe this will be a fun challenge for us to figure out. Therefore we are prioritizing generation time and memory usage to drive our choice to select method 1. If we end up needing to generate more than 2 Million decks we can do this with reasonable runtime and low storage needs. 
