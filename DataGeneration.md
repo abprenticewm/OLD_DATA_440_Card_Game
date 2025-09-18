@@ -23,7 +23,7 @@ Method 2 decks
 
 **Metrics**
 
-| Metric                   | Method 1: bits -> bytes -> bin files | Method 2: String -> .txt files |
+| Metric                   | Method 1: bits -> bytes -> .bin files | Method 2: String -> .txt files |
 |---------------------------|--------------------------------------|--------------------------------|
 | Gen time mean (10 runs)   | 95.91 s                              | 94.780 s                        |
 | Gen time std (10 runs)    | 1.81 s                               | 1.11 s                          |
